@@ -23,7 +23,7 @@ This is a personal portfolio project built to showcase my skills, projects, and 
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/your-username/your-repo-name.git
+    git clone https://github.com/Manjuhallegowda/Portfolio_Manju.git
     ```
 
 2. Open the `index.html` file in your browser to view the portfolio.

@@ -468,7 +468,7 @@ span {
 /* Mobile Devices (768px and up) */
 @media (max-width: 768px) {
     .certifications-grid {
-        grid-template-columns: 1fr; /* 1 column on mobile screens */
+        grid-template-columns: repeat(2, 1fr); /* 1 column on mobile screens */
     }
 
     .certifications h2 {

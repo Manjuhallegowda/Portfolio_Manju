@@ -80,3 +80,31 @@ function validateEmail(email) {
     const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return regex.test(email);
 }
+
+document.getElementById("hireMeButton").addEventListener("click", function() {
+    var position = "[Position Name]";  // Replace with dynamic values if needed
+    var company = "[Company Name]";   // Replace with dynamic values if needed
+
+    var message = `Interested in hiring for the position of ${position} in ${company}.`;
+
+    // Set the message in the textarea
+    document.getElementById("message").value = message;
+
+    // Scroll to the contact section
+    document.getElementById("contact").scrollIntoView({ behavior: 'smooth' });
+});
+
+// Handle the navbar "Contact" click to refresh the contact section
+document.getElementById("contactLink").addEventListener("click", function(event) {
+    event.preventDefault(); // Prevent default anchor link behavior
+    
+    // Scroll to the contact section smoothly
+    document.getElementById("contact").scrollIntoView({ behavior: 'smooth' });
+
+    // Optional: Simulate refreshing the contact section by resetting the form fields
+    setTimeout(function() {
+        document.getElementById("message").value = '';
+        document.getElementById("name").value = '';
+        document.getElementById("email").value = '';
+    }, 100);  // Reset form fields after 0.5 seconds (adjust if needed)
+});

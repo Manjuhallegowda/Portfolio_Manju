@@ -9,7 +9,8 @@
 
   <!-- box icons -->
   <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
-  <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+  <link rel='stylesheet'
+    href='https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
   <!-- custom css -->
@@ -29,7 +30,8 @@
       <a href="#about">About</a>
       <a href="#skills">Skills</a>
       <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
+      <a href="#certifications">Certifications</a>
+      <a href="#contact" id="contactLink">Contact</a>
     </nav>
   </header>
 
@@ -39,16 +41,20 @@
       <h3>Hello, It's Me</h3>
       <h1>M Manjunatha</h1>
       <h3>And I'm a <span class="multiple-text"></span></h3>
-      <p>Skilled in leveraging OOP principles to enhance code reusability and maintainability, adept at implementing
-        algorithms to optimize application performance, and driven to contribute to innovative projects in a dynamic,
-        collaborative environment.</p>
+      <p>
+        Skilled MCA graduate with expertise in software development, DSA, OOP, full-stack development, 
+        database management, and cloud deployment using AWS. Proficient in Python, JavaScript, C++ for 
+        IoT, AI/ML, DL, and Selenium, with experience in Git and GitHub for collaborative development.</p>
       <div class="social-media">
         <a href="https://www.facebook.com/manjuhalleygowda"><i class='bx bxl-facebook'></i></a>
         <a href="https://github.com/Manjuhallegowda"><i class='bx bxl-github'></i></a>
         <a href="https://instagram.com/manju_halleygowda"><i class='bx bxl-instagram-alt'></i></a>
         <a href="https://linkedin.com/in/manjuhallegowda"><i class='bx bxl-linkedin'></i></a>
       </div>
-      <a href="#" class="btn">Download CV</a>
+      <div class="buttons-container">
+        <button id="hireMeButton" class="btn">Hire Me</button>
+      <a href="images/M-Manjunatha.pdf" class="btn">Download CV</a>
+      </div>
     </div>
 
     <div class="home-img">
@@ -65,12 +71,11 @@
     <div class="about-content">
       <h2 class="heading">About <span>Me</span></h2>
       <h3>Developer</h3>
-      <p> Detail-oriented MCA graduate with a strong foundation in software development, Data Structures & Algorithms
-        (DSA), and Object-Oriented Programming (OOP). Proficient in full stack development, including front-end and back
-        end technologies, database management, and cloud computing. Experienced in applying OOP principles to enhance
-        code reusability and maintainability, and skilled in implementing algorithms to optimize application
-        performance. Eager to contribute to innovative projects in a dynamic environment while fostering growth in a
-        collaborative team.</p>
+      <p>Skilled MCA graduate with expertise in software development, data structures and algorithms (DSA), and object-oriented programming (OOP) 
+        principles. Proficient in full-stack development, database management, API integration, and cloud deployment using AWS (EC2 and S3). Experienced in 
+        implementing projects with Python, JavaScript frameworks, and C++ for IoT applications, with foundational knowledge of AI, ML, deep learning (DL), 
+        and Selenium testing. Experienced in using Git for version control and GitHub for collaborative development and code management. Eager to 
+        contribute to innovative projects in a collaborative environment.</p>
       <a href="https://www.linkedin.com/in/manjuhallegowda" class="btn">Read More</a>
     </div>
   </section>
@@ -124,6 +129,15 @@
 
     <div class="projects-container">
       <div class="projects-box">
+        <img src="images/web-application.jpg" alt="">
+        <div class="projects-layer">
+          <h4>Portfolio Website</h4>
+          <p>Designed and developed a responsive personal portfolio.</p>
+          <a href="https://m-manjunatha.netlify.app/"><i class='bx bx-link-external'></i></a>
+        </div>
+      </div>
+
+      <div class="projects-box">
         <img src="images/Python.jpg" alt="">
         <div class="projects-layer">
           <h4>Weather Data Reminder</h4>
@@ -146,7 +160,8 @@
         <div class="projects-layer">
           <h4>Health Care Monitoring</h4>
           <p>Real-time health monitoring using IoT sensors and Arduino.</p>
-          <a href="https://github.com/Manjuhallegowda/Heath-Care-Monitoring-System"><i class='bx bx-link-external'></i></a>
+          <a href="https://github.com/Manjuhallegowda/Heath-Care-Monitoring-System"><i
+              class='bx bx-link-external'></i></a>
         </div>
       </div>
 
@@ -155,11 +170,64 @@
         <div class="projects-layer">
           <h4>Workers Safety Monitor System</h4>
           <p>IoT system for real-time monitoring in industries.</p>
-          <a href="https://github.com/Manjuhallegowda/Industrial-Safety-Monitoring-System"><i class='bx bx-link-external'></i></a>
+          <a href="https://github.com/Manjuhallegowda/Industrial-Safety-Monitoring-System"><i
+              class='bx bx-link-external'></i></a>
         </div>
       </div>
     </div>
   </section>
+
+  <!-- certification section design -->
+
+  <section class="section" id="certifications" data-aos="fade-up">
+    <div class="container">
+      <h2 class="heading">Certifications</h2>
+      <div class="certifications-grid">
+
+        <!-- Certification 1 -->
+        <div class="certification">
+          <h3 class="certification-title">Java</h3>
+          <div class="certification-image-container">
+            <img src="images/Programming In Java.jpg" alt="Programming in Java" class="certification-image">
+            <span class="tooltip" onclick="previewImage('images/Programming In Java.jpg')">Preview</span>
+          </div>
+        </div>
+
+        <!-- Certification 2 -->
+        <div class="certification">
+          <h3 class="certification-title">Google Analytics</h3>
+          <div class="certification-image-container">
+            <img src="images/Google Analytics Certification.jpg" alt="Google Analytics" class="certification-image">
+            <span class="tooltip" onclick="previewImage('images/Google Analytics Certification.jpg')">Preview</span>
+          </div>
+        </div>
+
+        <!-- Certification 3 -->
+        <div class="certification">
+          <h3 class="certification-title">Selenium Basic</h3>
+          <div class="certification-image-container">
+            <img src="images/Basics in Selenium.jpg" alt="Selenium Basic" class="certification-image">
+            <span class="tooltip" onclick="previewImage('images/Google Analytics Certification.jpg')">Preview</span>
+          </div>
+        </div>
+
+        <!-- Certification 4 -->
+        <div class="certification">
+          <h3 class="certification-title">MongoDB</h3>
+          <div class="certification-image-container">
+            <img src="images/Mongodb.jpg" alt="MongoDB Certification" class="certification-image">
+            <span class="tooltip" onclick="previewImage('images/Mongodb.jpg')">Preview</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modal for Image Preview -->
+  <div id="imageModal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="modalImage">
+  </div>
 
   <!-- contact section design -->
   <section class="contact" id="contact">
@@ -178,7 +246,7 @@
     <div id="response"></div>
   </section>
 
-  <div class="social-mediaa">
+  <div class="social-mediaa" id="social-mediaa">
     <a href="https://linkedin.com/in/manjuhallegowda" target="_blank" class="social-icon" aria-label="linkedin">
       <i class="fab fa-linkedin-in"></i>
     </a>
@@ -191,9 +259,16 @@
   </div>
 
   <!-- footer design -->
-  <footer class="footer">
+  <footer class="footer" id="footer">
     <div class="footer-text">
       <p>Copyright | All Rights Reserved</p>
+    </div>
+
+    <div class="social-media">
+      <a href="https://www.facebook.com/manjuhalleygowda"><i class='bx bxl-facebook'></i></a>
+      <a href="https://github.com/Manjuhallegowda"><i class='bx bxl-github'></i></a>
+      <a href="https://instagram.com/manju_halleygowda"><i class='bx bxl-instagram-alt'></i></a>
+      <a href="https://linkedin.com/in/manjuhallegowda"><i class='bx bxl-linkedin'></i></a>
     </div>
 
     <div class="footer-iconTop">

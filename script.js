@@ -45,15 +45,58 @@ ScrollReveal({
 });
 
 ScrollReveal().reveal('.home-content, .heading', {origin: 'top'});
-ScrollReveal().reveal('.home-img, .skills-container, .projects-box, .contact form', { origin: 'bottom' });
+ScrollReveal().reveal('.home-img, .skills-container, .projects-box, .contact form, .certification', { origin: 'bottom' });
 ScrollReveal().reveal('.home-contact h1, .about-img', { origin: 'left' });
 ScrollReveal().reveal('.home-contact p, .about-content', { origin: 'right' });
 
 /*==================== typed js ====================*/
 const typed = new Typed('.multiple-text', {
-    strings: ['Frontend Developer', 'Backend Developer' ],
+    strings: ['Client-Side Developer', 'Server-Side Developer', 'Freelancer', 'Advance AI Coder' ],
     typeSpeed: 100,
     backSpeed: 100,
     backDelay: 1000,
     loop: true
+});
+
+// JavaScript to handle the image preview in the modal
+function previewImage(imageSrc) {
+    const modal = document.getElementById("imageModal");
+    const modalImage = document.getElementById("modalImage");
+
+    // Set the image source and display the modal
+    modalImage.src = imageSrc;
+    modal.style.display = "block";
+}
+
+// Close modal when the user clicks on the close button or outside the modal
+document.querySelector(".close").onclick = function () {
+    document.getElementById("imageModal").style.display = "none";
+};
+
+window.onclick = function (event) {
+    const modal = document.getElementById("imageModal");
+    if (event.target === modal) {
+        modal.style.display = "none";
+    }
+};
+
+// Get the sections
+const aboutSection = document.getElementById('home');
+const footerSection = document.getElementById('footer');
+const socialMedia = document.getElementById('social-mediaa');
+
+// Listen for scroll events
+window.addEventListener('scroll', function() {
+    // Get the position of the About and Footer sections relative to the viewport
+    const aboutPosition = aboutSection.getBoundingClientRect();
+    const footerPosition = footerSection.getBoundingClientRect();
+
+    // Check if the user has scrolled past the About section and before the Footer section
+    if (aboutPosition.bottom <= 0 && footerPosition.top > window.innerHeight) {
+        // Show the social media section
+        socialMedia.style.display = 'block';
+    } else {
+        // Hide the social media section if user is not in the required range
+        socialMedia.style.display = 'none';
+    }
 });

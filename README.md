@@ -30,4 +30,6 @@ This is a personal portfolio project built to showcase my skills, projects, and 
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under **All Rights Reserved**.  
+Unauthorized use, copying, modification, or distribution is strictly prohibited.  
+For permissions, please contact the author. See the [LICENSE](LICENSE) file for details.

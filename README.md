@@ -28,6 +28,16 @@ This is a personal portfolio project built to showcase my skills, projects, and 
 
 2. Open the `index.html` file in your browser to view the portfolio.
 
+## Live Link
+
+ [Link](https://m-manjunatha.netlify.app/)
+
+## Author
+
+M Manjunatha
+📧 manjuhallegowda@gmail.com
+🔗 [LinkedIn](https://www.linkedin.com/in/manjuhallegowda/)
+
 ## License
 
 This project is licensed under **All Rights Reserved**.  
